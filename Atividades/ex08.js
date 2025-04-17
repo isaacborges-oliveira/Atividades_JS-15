@@ -1,4 +1,6 @@
 
-
-const texto = "Clara Crastechini @! 77653 :)";
-const limpo = texto.replace(/[^a-zA-Z0-9]/g, "");
+function removerCaracteresEspeciais(texto) {
+    return texto.replace(/[^a-zA-Z0-9\s]/g, '');
+  }
+  
+  console.log(removerCaracteresEspeciais('Olá, Mundo. Como vai?'));
